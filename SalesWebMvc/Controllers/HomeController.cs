@@ -14,6 +14,12 @@ namespace SalesWebMvc.Controllers
         {
             return View();
         }
+        public IActionResult Test()
+        {
+            ViewData["Message"] = "This is a Test";
+
+            return View();
+        }
 
         public IActionResult About()
         {
